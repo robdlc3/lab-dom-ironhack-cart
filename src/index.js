@@ -1,4 +1,4 @@
-// ITERATION 1
+// ----ITERATION 1  ---- //
 
 function updateSubtotal(product) {
   console.log('Calculating subtotal, yey!');
@@ -13,14 +13,14 @@ function calculateAll() {
   updateSubtotal(singleProduct);
   // end of test
 
-  // ITERATION 2
+  // ----ITERATION 2  ---- //
   //... your code goes here
 
-  // ITERATION 3
+  // ----ITERATION 3  ---- //
   //... your code goes here
 }
 
-// ITERATION 4
+// ----ITERATION 4  ---- //
 
 function removeProduct(event) {
   const target = event.currentTarget;
@@ -28,7 +28,7 @@ function removeProduct(event) {
   //... your code goes here
 }
 
-// ITERATION 5
+// ----ITERATION 5  ---- //
 
 function createProduct() {
   //... your code goes here
