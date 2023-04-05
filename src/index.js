@@ -1,9 +1,20 @@
 // ----ITERATION 1  ---- //
+let total = document.getElementsByClassName('subtotal')[0].innerText
+console.log(total)
 
 function updateSubtotal(product) {
-  console.log('Calculating subtotal, yey!');
+  // console.log('Calculating subtotal, yey!');
 
   //... your code goes here
+  console.log('clicked')
+  let price = document.getElementsByClassName('price')[0].innerText
+  price = Number(price.replace(/[^0-9.-]+/g, ""))
+  let quantity = (document.getElementsByTagName('input'))
+  quantity = Number(quantity[0].value)
+  const subTotalVal = price * quantity
+  let subTotal = document.getElementsByClassName('subtotal')[0]
+  return subTotal.innerText = `$${subTotalVal}`
+
 }
 
 function calculateAll() {
@@ -13,14 +24,16 @@ function calculateAll() {
   updateSubtotal(singleProduct);
   // end of test
 
-  // ----ITERATION 2  ---- //
+  // ITERATION 2
   //... your code goes here
 
-  // ----ITERATION 3  ---- //
+
+
+  // ITERATION 3
   //... your code goes here
 }
 
-// ----ITERATION 4  ---- //
+// ITERATION 4
 
 function removeProduct(event) {
   const target = event.currentTarget;
@@ -28,7 +41,7 @@ function removeProduct(event) {
   //... your code goes here
 }
 
-// ----ITERATION 5  ---- //
+// ITERATION 5
 
 function createProduct() {
   //... your code goes here
